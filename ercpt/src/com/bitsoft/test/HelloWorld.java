@@ -5,10 +5,13 @@ package com.bitsoft.test;
  */
 public class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("Hello,World this is the first git project");
+        int i = 200;
+        String formatwithzero = StringUtils.fillWithZero(String.valueOf(i), 10);
+        System.out.println("fillStr:" + formatwithzero);
+        printMsg("zhangxiyang");
     }
 
-    public static void printMsg(String msg){
+    public static void printMsg(String msg) {
         System.out.println("Hello,this is the real msg:" + msg);
     }
 }
